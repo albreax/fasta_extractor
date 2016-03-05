@@ -1,6 +1,6 @@
 ##Description
-The script extract sub sequences from a given fasta file by a given
-coordinate txt. All extracted sub sequences resulting in a output fasta file.
+The script extract subsequences from a given fasta file by a given
+coordinate txt. All extracted subsequences resulting in a output fasta file.
 
 ##Requirements
 - Python >3.5
