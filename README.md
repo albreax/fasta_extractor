@@ -20,21 +20,21 @@ python sub_seq_extrctr.py -s *fasta_file*.fasta -c *coordinate_file*.txt -o *out
 ##Example
 
 *example.fasta*
->\>Aca_clpP-cp
->ATGCCCATTGGTGTTCCAAAAGTACCTTTTCGGAGTCCTGGAGAGGAAGATGCAGCTTGGGTTGACATATAGTGCGACTT
->\>Cta_clpP-cp
->ATGCCCATTGGTGTTCCAAAAGTTCCTTTTCGGATCCCTGGAGAGGAAGATGCAGTTTGGGTCGACGTATAGTGCGACTT
->GTCGGACATATCGGGTTATACGGAATTTCCCCGTTATCTCTCCTGATGAGATATTTCCTGCTTCATTCAGGATCGATTCA
+>\>Aca_clpP-cp\n
+>ATGCCCATTGGTGTTCCAAAAGTACCTTTTCGGAGTCCTGGAGAGGAAGATGCAGCTTGGGTTGACATATAGTGCGACTT\n
+>\>Cta_clpP-cp\n
+>ATGCCCATTGGTGTTCCAAAAGTTCCTTTTCGGATCCCTGGAGAGGAAGATGCAGTTTGGGTCGACGTATAGTGCGACTT\n
+>GTCGGACATATCGGGTTATACGGAATTTCCCCGTTATCTCTCCTGATGAGATATTTCCTGCTTCATTCAGGATCGATTCA\n
 
 *coordinate_example.txt* 
 >\# sequence_name start stop
->Ath_clpP-cp 3   8
->\# comment
->Cta_clpP-cp 1   5
+>Ath_clpP-cp 3   8\n
+>\# comment\n
+>Cta_clpP-cp 1   5\n
 
 
 *output.fasta*
->\>Ath_clpP-cp <fragment start: 3 end: 8\>
->GCCTAT
->\>Cta_clpP-cp <fragment start: 1 end: 5\>
->ATGCC
+>\>Ath_clpP-cp <fragment start: 3 end: 8\>\n
+>GCCTAT\n
+>\>Cta_clpP-cp <fragment start: 1 end: 5\>\n
+>ATGCC\n
