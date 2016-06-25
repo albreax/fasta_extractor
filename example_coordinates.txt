@@ -3,3 +3,5 @@ Cta_clpP-cp 1   5
 
 # comment
 Ath_clpP-cp 90  101
+
+Ath_clpP-cp 98  70

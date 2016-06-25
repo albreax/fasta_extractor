@@ -45,11 +45,9 @@ def parse_coordinate_line(line):
     }
 
     if c["end"] < c["start"]:
-        raise Exception(
-            "coordinate file ERROR: end coordinate is larger then the" +
-            " start coordinate in line:\n\t%s"
-            % (line)
-        )
+        start = c["end"]
+        c["end"] = c["start"]
+        c["start"] = start
 
     return c
 
