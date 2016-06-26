@@ -124,7 +124,7 @@ def main(argv):
                     str(c["start"]), str(c["end"]))
                 # create output record
                 out_record = SeqRecord(
-                    fragment,
+                    fragment.upper(),
                     id=seq_record.id,
                     description="<%s>" % (description)
                 )
