@@ -108,8 +108,9 @@ def main(argv):
 
             except Exception as e:
                 sys.exit(e)
-
-    out_sequences = []
+    # clear file
+    open(output_file, 'w').close()
+    oh = open(output_file, "a")
 
     # read given fasta file and process each sequence record
     for seq_record in SeqIO.parse(fasta_file, "fasta"):
@@ -128,11 +129,9 @@ def main(argv):
                     description="<%s>" % (description)
                 )
                 # append output record to output sequences
-                out_sequences.append(out_record)
+                SeqIO.write(out_record, oh, "fasta")
 
-                fh = open(output_file, "w")
-                SeqIO.write(out_sequences, fh, "fasta")
-                fh.close()
+    oh.close()
 
 if __name__ == "__main__":
     main(sys.argv)
